@@ -35,6 +35,19 @@
         a:hover {
             text-decoration: underline; /* Underline link on hover */
         }
+        .logos {
+            margin-top: 30px;
+        }
+        .logos img {
+            margin: 0 10px;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+        .logos img:hover {
+            opacity: 0.7;
+        }
     </style>
 </head>
 <body>
@@ -44,6 +57,16 @@
     <br>
     <button onclick="checkEligibility()" style="margin-top: 10px;">Check Eligibility</button>
     <div id="result" style="margin-top: 20px;"></div>
+    
+    <!-- Logos section -->
+    <div class="logos">
+        <a href="https://twitter.com/yourTwitterHandle" target="_blank">
+            <img src="https://www.flaticon.com/svg/static/icons/svg/124/124021.svg" alt="Twitter Logo">
+        </a>
+        <a href="https://opensea.io/" target="_blank">
+            <img src="https://www.flaticon.com/svg/static/icons/svg/2111/2111646.svg" alt="OpenSea Logo">
+        </a>
+    </div>
 
     <script src="/script.js"></script>
 </body>
