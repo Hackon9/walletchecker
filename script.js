@@ -23,6 +23,6 @@ function checkEligibility() {
         document.getElementById('result').innerText = 'You are eligible';
     } else {
         document.getElementById('result').innerText = 'Sorry, you are not eligible';
-        document.getElementById('result').innerHTML += '<br><a href="https://https://twitter.com/BasedChadNFT">Interact with Twitter to get eligible </a>';
+        document.getElementById('result').innerHTML += '<br><a href="https://twitter.com/BasedChadNFT">Interact with Twitter to get eligible </a>';
     }
 }
