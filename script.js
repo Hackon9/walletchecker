@@ -1,5 +1,7 @@
 function isValidWalletAddress(address) {
-    const regex = /^(0x)?[0-9a-f]{40}$/i;
+    /* const regex = /^(0x)?[0-9a-f]{40}$/i; change as your requrement*/
+   const regex = /^[0-9a-f]+|\d+$/i;
+   /*const regex = /^[A-Za-z]+|\d+$/;*/
     return regex.test(address);
 }
 
@@ -9913,24 +9915,11 @@ function checkEligibility() {
 '0xA107040F03Ad52cecEE4A644E5Ec92Cb9573B605',
 '0x1935Cc900625C6F077a7489fe2c9de0e6DC815Dc',
 
-
-
-
-
-
-
-
-
-
-
-
-
     ];
 
     if (eligibleWallets.includes(walletAddress)) {
         document.getElementById('result').innerText = 'You are eligible';
     } else {
         document.getElementById('result').innerText = 'Sorry, you are not eligible';
-        document.getElementById('result').innerHTML += '<br><a href="https://twitter.com/BasedChadNFT">Interact with Twitter to get eligible </a>';
     }
 }
